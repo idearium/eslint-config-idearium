@@ -2,6 +2,14 @@
   "name": "eslint-config-idearium",
   "version": "1.0.0",
   "description": "Idearium ESLint config.",
+  "keywords": [
+    "eslint",
+    "config",
+    "idearium"
+  ],
+  "files": [
+    "src"
+  ],
   "main": "src/index.js",
   "repository": "https://github.com/idearium/eslint-config-idearium.git",
   "author": "Allan Chau",

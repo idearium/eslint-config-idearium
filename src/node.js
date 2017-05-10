@@ -6,7 +6,7 @@ module.exports = {
         'mongo': true,
         'node': true,
     },
-    'extends': 'idearium/common',
+    'extends': 'idearium/src/common',
     'parserOptions': {
         'ecmaVersion': 6,
         'sourceType': 'script',
