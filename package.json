@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-idearium",
+  "name": "@idearium/eslint-config",
   "version": "1.0.0",
   "description": "Idearium ESLint config.",
   "keywords": [

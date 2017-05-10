@@ -6,7 +6,7 @@ module.exports = {
         'mongo': true,
         'node': true,
     },
-    'extends': 'idearium/src/common',
+    'extends': '@idearium/eslint-config/src/common',
     'parserOptions': {
         'ecmaVersion': 6,
         'sourceType': 'script',
