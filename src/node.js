@@ -19,7 +19,7 @@ module.exports = {
         'no-restricted-modules': 'off',
         'no-sync': 'error',
 
-        'arrow-body-style': 'error',
+        'arrow-body-style': 'off',
         'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': 'error',
         'constructor-super': 'error',
