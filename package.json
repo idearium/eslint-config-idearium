@@ -16,5 +16,8 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=3"
+  },
+  "dependencies": {
+    "eslint-plugin-eslint-comments": "1.0.2"
   }
 }

@@ -2,6 +2,9 @@
 
 module.exports = {
     'root': true,
+    'plugins': [
+        'eslint-comments'
+    ],
     'env': {
         'jasmine': true,
         'jest': true,
@@ -238,5 +241,12 @@ module.exports = {
         'template-tag-spacing': 'off',
         'unicode-bom': 'error',
         'wrap-regex': 'error',
+
+        'eslint-comments/disable-enable-pair': 'error',
+        'eslint-comments/no-duplicate-disable': 'error',
+        'eslint-comments/no-unlimited-disable': 'error',
+        'eslint-comments/no-unused-disable': 'error',
+        'eslint-comments/no-unused-enable': 'error',
+        'eslint-comments/no-use': 'error',
     },
 };
