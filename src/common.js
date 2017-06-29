@@ -247,6 +247,6 @@ module.exports = {
         'eslint-comments/no-unlimited-disable': 'error',
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',
-        'eslint-comments/no-use': 'error',
+        'eslint-comments/no-use': 'off',
     },
 };
