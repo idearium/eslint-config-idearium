@@ -2,6 +2,9 @@
 
 module.exports = {
     'root': true,
+    'plugins': [
+        'eslint-comments'
+    ],
     'env': {
         'jasmine': true,
         'jest': true,
@@ -79,7 +82,7 @@ module.exports = {
         'no-labels': 'error',
         'no-lone-blocks': 'error',
         'no-loop-func': 'error',
-        'no-magic-numbers': 'error',
+        'no-magic-numbers': 'off',
         'no-multi-spaces': 'error',
         'no-multi-str': 'error',
         'no-new': 'error',
@@ -181,7 +184,7 @@ module.exports = {
         'new-parens': 'error',
         'newline-after-var': 'error',
         'newline-before-return': 'error',
-        'newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
+        'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
@@ -238,5 +241,12 @@ module.exports = {
         'template-tag-spacing': 'off',
         'unicode-bom': 'error',
         'wrap-regex': 'error',
+
+        'eslint-comments/disable-enable-pair': 'error',
+        'eslint-comments/no-duplicate-disable': 'error',
+        'eslint-comments/no-unlimited-disable': 'error',
+        'eslint-comments/no-unused-disable': 'error',
+        'eslint-comments/no-unused-enable': 'error',
+        'eslint-comments/no-use': 'off',
     },
 };

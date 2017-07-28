@@ -6,7 +6,7 @@ module.exports = {
         'commonjs': true,
         'jquery': true,
     },
-    'extends': 'idearium/common',
+    'extends': '@idearium/eslint-config/src/common',
     'parserOptions': {
         'ecmaVersion': 5,
         'sourceType': 'script',
