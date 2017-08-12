@@ -13,6 +13,7 @@ module.exports = {
     },
     'rules': {
         'handle-callback-err': ['error', '^(e|err|error)$'],
+        'no-buffer-constructor': 'error',
         'no-path-concat': 'error',
         'no-process-env': 'error',
         'no-process-exit': 'error',
