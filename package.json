@@ -14,13 +14,8 @@
   "repository": "https://github.com/idearium/eslint-config-idearium.git",
   "author": "Allan Chau",
   "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">=4"
-  },
   "dependencies": {
+    "eslint": "4",
     "eslint-plugin-eslint-comments": "^1.0.3"
-  },
-  "devDependencies": {
-    "eslint": "^4.4.1"
   }
 }
