@@ -157,6 +157,7 @@ module.exports = {
         'func-name-matching': 'off',
         'func-names': 'error',
         'func-style': ['error', 'expression', { allowArrowFunctions: true }],
+        'function-paren-newline': 'error',
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
