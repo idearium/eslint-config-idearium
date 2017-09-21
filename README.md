@@ -1,6 +1,5 @@
 # eslint-config-idearium
 
-[![build status](https://gitlab.com/idearium/eslint-config-idearium/badges/master/build.svg)](https://gitlab.com/idearium/eslint-config-idearium/commits/master)
 [![npm](https://img.shields.io/npm/v/@idearium/eslint-config.svg)](https://www.npmjs.com/package/@idearium/eslint-config)
 
 ## Installation
