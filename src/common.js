@@ -54,7 +54,7 @@ module.exports = {
         'block-scoped-var': 'error',
         'class-methods-use-this': ['error', { exceptMethods: ['startServer'] }],
         'complexity': ['error', 10],
-        'consistent-return': 'error',
+        'consistent-return': 'off',
         'curly': 'error',
         'default-case': 'error',
         'dot-location': ['error', 'property'],
