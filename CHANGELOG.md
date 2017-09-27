@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v2.0.0 - 27 September 2017
 
 - Remove `consistent-return` that was breaking when using promises.
 
