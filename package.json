@@ -1,6 +1,6 @@
 {
   "name": "@idearium/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Idearium ESLint config.",
   "keywords": [
     "eslint",
