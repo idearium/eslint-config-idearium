@@ -170,7 +170,7 @@ module.exports = {
         'lines-around-comment': 'error',
         'max-depth': 'error',
         'max-len': ['error', {
-            code: 100,
+            code: 120,
             ignoreComments: true,
             ignoreRegExpLiterals: true,
             ignoreStrings: true,
