@@ -219,7 +219,7 @@ module.exports = {
         'nonblock-statement-body-position': 'error',
         'object-curly-newline': ['error', { multiline: true }],
         'object-curly-spacing': ['error', 'always'],
-        'object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+        'object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
         'one-var': ['error', 'never'],
         'one-var-declaration-per-line': 'off',
         'operator-assignment': 'error',
