@@ -168,6 +168,7 @@ module.exports = {
         'line-comment-position': 'error',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
+        'lines-between-class-members': 'error',
         'max-depth': 'error',
         'max-len': ['error', {
             code: 120,
@@ -183,6 +184,7 @@ module.exports = {
         'max-params': ['error', 4],
         'max-statements': 'off',
         'max-statements-per-line': 'error',
+        'multiline-comment-style': ['error', 'separate-lines'],
         'multiline-ternary': ['error', 'never'],
         'new-cap': ['error', { capIsNewExceptions: ['Router'] }],
         'new-parens': 'error',
@@ -255,7 +257,9 @@ module.exports = {
         'wrap-regex': 'error',
 
         'eslint-comments/disable-enable-pair': 'error',
+        'eslint-comments/no-aggregating-enable': 'error',
         'eslint-comments/no-duplicate-disable': 'error',
+        'eslint-comments/no-restricted-disable': 'off',
         'eslint-comments/no-unlimited-disable': 'error',
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',

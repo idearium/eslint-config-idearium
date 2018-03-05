@@ -1,6 +1,6 @@
 {
   "name": "@idearium/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.2",
   "description": "Idearium ESLint config.",
   "keywords": [
     "eslint",
@@ -15,7 +15,7 @@
   "author": "Allan Chau",
   "license": "MIT",
   "dependencies": {
-    "eslint": "^4.7.1",
-    "eslint-plugin-eslint-comments": "^1.0.3"
+    "eslint": "^4.16.0",
+    "eslint-plugin-eslint-comments": "^2.0.2"
   }
 }
