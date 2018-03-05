@@ -1,10 +1,14 @@
 # Changelog
 
-## v2.1.1 - 23 Jan 2017
+## v2.1.2 - 5 March 2017
+
+- Updated `multiline-comment-style` configuration to `separate-lines`.
+
+## v2.1.1 - 23 Jan 2018
 
 - Updated `object-property-newline` configuration with `allowMultiplePropertiesPerLine: true`.
 
-## v2.1.0 - 23 Jan 2017
+## v2.1.0 - 23 Jan 2018
 
 - Upgrade ESLint to 4.16.0
 - Increased the `max-len` rule to 120 characters.
