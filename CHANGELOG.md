@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1.1 - 23 Jan 2017
+
+- Updated `object-property-newline` configuration with `allowMultiplePropertiesPerLine: true`.
+
 ## v2.1.0 - 23 Jan 2017
 
 - Upgrade ESLint to 4.16.0
