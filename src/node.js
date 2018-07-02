@@ -21,7 +21,7 @@ module.exports = {
         'no-sync': 'error',
 
         'arrow-body-style': 'off',
-        'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
+        'arrow-parens': 'error',
         'arrow-spacing': 'error',
         'constructor-super': 'error',
         'generator-star-spacing': 'error',
