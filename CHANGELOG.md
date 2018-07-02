@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v3.0.0 - 3 July 2018
 
 - Upgraded eslint to v5.
 - Upgraded `eslint-plugin-eslint-comments` to v3.
