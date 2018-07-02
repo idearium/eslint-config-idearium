@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Upgraded eslint to v5.
+- Upgraded `eslint-plugin-eslint-comments` to v3.
+- Added `prefer-object-spread` rule.
+- Set arrow-parens to always required.
+
 ## v2.1.2 - 5 March 2017
 
 - Updated `multiline-comment-style` configuration to `separate-lines`.
