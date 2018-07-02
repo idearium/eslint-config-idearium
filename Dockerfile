@@ -9,7 +9,10 @@ RUN apk add --no-cache curl openssl && \
 # Only install packages if there is an update.
 COPY /package.json /yarn.lock /app/
 WORKDIR /app
-RUN yarn --production
+RUN yarn global add greenkeeper-lockfile@1 && \
+    greenkeeper-lockfile-update && \
+    yarn --production && \
+    greenkeeper-lockfile-upload
 
 COPY / /app
 
