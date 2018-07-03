@@ -21,3 +21,15 @@ This package is available on [NPM](https://www.npmjs.com/package/@eslint/eslint-
     "extends": "@idearium/eslint-config/src/browser"
   }
   ```
+
+## Deploying
+
+To deploy a new version, first update the changelog and then:
+
+```shell
+$ yarn version
+info Current version: 1.0.0
+question New version: <enter the new version>
+
+$ git push --follow-tags
+```
