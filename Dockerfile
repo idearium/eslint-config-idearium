@@ -9,11 +9,9 @@ RUN apk add --no-cache curl openssl && \
 # Only install packages if there is an update.
 COPY /package.json /yarn.lock /app/
 WORKDIR /app
-RUN yarn global add greenkeeper-lockfile@1 && \
+RUN yarn global add idearium/greenkeeper-lockfile#e0537a07b90465e8c915890d1e726df76bceecd1 && \
     greenkeeper-lockfile-update && \
     yarn --production && \
     greenkeeper-lockfile-upload
 
 COPY / /app
-
-CMD dockerize -wait tcp://mongo:27017 -wait tcp://rabbitmq:5672 -wait tcp://redis:6379 -timeout 20s yarn test-app
