@@ -1,11 +1,15 @@
 # Changelog
 
+## v3.0.1 - 3 July 2018
+
+- Set `prefer-object-spread` to off.
+
 ## v3.0.0 - 3 July 2018
 
 - Upgraded eslint to v5.
 - Upgraded `eslint-plugin-eslint-comments` to v3.
 - Added `prefer-object-spread` rule.
-- Set arrow-parens to always required.
+- Set `arrow-parens` to always required.
 
 ## v2.1.2 - 5 March 2017
 
