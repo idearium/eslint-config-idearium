@@ -3,11 +3,17 @@ version: '1.0'
 steps:
 
   BuildingDockerImage:
+    build_arguments:
+      - CF_BRANCH=${{CF_BRANCH}}
+      - CF_PULL_REQUEST_ACTION=${{CF_PULL_REQUEST_ACTION}}
+      - CF_PULL_REQUEST_TARGET=${{CF_PULL_REQUEST_TARGET}}
+      - CF_REPO_NAME=${{CF_REPO_NAME}}
+      - CODEFRESH=true
+    dockerfile: Dockerfile
+    image_name: idearium/eslint-config-idearium
     title: Building Docker image
     type: build
-    image_name: idearium/eslint-config-idearium
     working_directory: ./
-    dockerfile: Dockerfile
 
   RunningDeployScript:
     title: Running deploy script
