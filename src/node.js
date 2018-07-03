@@ -8,7 +8,10 @@ module.exports = {
     },
     'extends': '@idearium/eslint-config/src/common',
     'parserOptions': {
-        'ecmaVersion': 2018,
+        'ecmaFeatures': {
+            'experimentalObjectRestSpread': true,
+        },
+        'ecmaVersion': 6,
         'sourceType': 'script',
     },
     'rules': {
@@ -19,7 +22,6 @@ module.exports = {
         'no-process-exit': 'error',
         'no-restricted-modules': 'off',
         'no-sync': 'error',
-
         'arrow-body-style': 'off',
         'arrow-parens': 'error',
         'arrow-spacing': 'error',
