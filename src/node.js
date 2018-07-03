@@ -8,7 +8,7 @@ module.exports = {
     },
     'extends': '@idearium/eslint-config/src/common',
     'parserOptions': {
-        'ecmaVersion': 6,
+        'ecmaVersion': 2018,
         'sourceType': 'script',
     },
     'rules': {
