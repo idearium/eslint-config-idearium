@@ -16,6 +16,11 @@ This package is available on [NPM](https://www.npmjs.com/package/@eslint/eslint-
     "extends": "@idearium/eslint-config"
   }
 
+  // For React code (transpiled).
+  {
+    "extends": "@idearium/eslint-config/src/react"
+  }
+
   // For browser code (ES5).
   {
     "extends": "@idearium/eslint-config/src/browser"
