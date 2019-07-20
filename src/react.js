@@ -22,5 +22,6 @@ module.exports = {
         'prefer-object-spread': 'off',
         'react/jsx-closing-bracket-location': 'error',
         'require-jsdoc': 'off',
+        'space-before-function-paren': 'off',
     }
 };
