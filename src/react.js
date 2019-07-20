@@ -22,6 +22,7 @@ module.exports = {
         'lines-between-class-members': 'off',
         'object-curly-newline': 'off',
         'padded-blocks': 'off',
+        'padding-line-between-statements': 'off',
         'prefer-object-spread': 'off',
         'react/jsx-closing-bracket-location': 'error',
         'require-jsdoc': 'off',
