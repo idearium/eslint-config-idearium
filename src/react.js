@@ -17,6 +17,7 @@ module.exports = {
     rules: {
         'class-methods-use-this': 'off',
         'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
+        'function-paren-newline': 'off',
         'padded-blocks': 'off',
         'prefer-object-spread': 'off',
         'react/jsx-closing-bracket-location': 'error',
