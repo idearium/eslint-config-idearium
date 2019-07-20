@@ -21,6 +21,7 @@ module.exports = {
         'function-paren-newline': 'off',
         'lines-between-class-members': 'off',
         'object-curly-newline': 'off',
+        'operator-linebreak': 'off',
         'padded-blocks': 'off',
         'padding-line-between-statements': 'off',
         'prefer-object-spread': 'off',
