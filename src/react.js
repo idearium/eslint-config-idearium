@@ -19,6 +19,7 @@ module.exports = {
         'comma-dangle': 'off',
         'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
         'function-paren-newline': 'off',
+        'object-curly-newline': 'off',
         'padded-blocks': 'off',
         'prefer-object-spread': 'off',
         'react/jsx-closing-bracket-location': 'error',
