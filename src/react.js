@@ -16,6 +16,7 @@ module.exports = {
     },
     rules: {
         'class-methods-use-this': 'off',
+        'comma-dangle': 'off',
         'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
         'function-paren-newline': 'off',
         'padded-blocks': 'off',
