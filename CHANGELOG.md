@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added initial `react` configuration.
+- Changed `capitalized-comments` to `ignoreConsecutiveComments`.
+
 ## v3.0.1 - 3 July 2018
 
 - Set `prefer-object-spread` to off.

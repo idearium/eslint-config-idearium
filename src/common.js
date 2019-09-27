@@ -146,7 +146,7 @@ module.exports = {
         'block-spacing': 'error',
         'brace-style': 'error',
         'camelcase': 'error',
-        'capitalized-comments': 'error',
+        'capitalized-comments': ['error', 'always', { 'ignoreConsecutiveComments': true }],
         'comma-dangle': ['error', 'always-multiline'],
         'comma-spacing': 'error',
         'comma-style': 'error',
@@ -224,11 +224,7 @@ module.exports = {
         'one-var-declaration-per-line': 'off',
         'operator-assignment': 'error',
         'operator-linebreak': ['error', 'none'],
-        'padded-blocks': ['warn', {
-            blocks: 'always',
-            classes: 'always',
-            switches: 'never',
-        }],
+        'padded-blocks': 'off',
         'padding-line-between-statements': [
             'error',
             { blankLine: 'always', prev: 'directive', next: '*' },
