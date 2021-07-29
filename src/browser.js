@@ -8,7 +8,7 @@ const config = {
     },
     extends: ['@idearium/eslint-config/src/common', 'prettier'],
     parserOptions: {
-        ecmaVersion: 5,
+        ecmaVersion: 2019,
         sourceType: 'script',
     },
 };
