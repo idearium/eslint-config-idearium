@@ -12,7 +12,7 @@ const config = {
     extends: [
         'eslint:recommended',
         'plugin:node/recommended',
-        'plugin:@next/next/recommended',
+        'next',
         'prettier',
     ],
     parserOptions: {
