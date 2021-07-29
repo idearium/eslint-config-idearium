@@ -37,7 +37,11 @@ const config = {
         'no-useless-computed-key': 'error',
         'no-useless-constructor': 'error',
         'no-useless-rename': 'error',
-        'node/no-missing-import': 'off',
+        'node/no-missing-import': ['error', { resolvePaths: ['.'] }],
+        'node/no-unsupported-features/es-syntax': [
+            'error',
+            { ignores: ['modules'] },
+        ],
         'prefer-const': 'error',
         'prefer-destructuring': 'error',
         'prefer-rest-params': 'error',
