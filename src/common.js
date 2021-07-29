@@ -6,7 +6,8 @@ const config = {
         'jest': true,
         'shared-node-browser': true,
     },
-    extends: ['eslint-comments', 'eslint:recommended'],
+    extends: ['eslint:recommended'],
+    plugins: ['eslint-comments'],
     rules: {
         'no-await-in-loop': 'error',
         'no-console': 'error',
