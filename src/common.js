@@ -3,6 +3,7 @@
 const config = {
     root: true,
     env: {
+        'es6': true,
         'jest': true,
         'shared-node-browser': true,
     },

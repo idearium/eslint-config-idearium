@@ -2,7 +2,6 @@
 
 const config = {
     env: {
-        es6: true,
         node: true,
     },
     extends: [
