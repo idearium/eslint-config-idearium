@@ -1,6 +1,6 @@
 # eslint-config-idearium
 
-[![npm](https://img.shields.io/npm/v/@idearium/eslint-config.svg)](https://www.npmjs.com/package/@idearium/eslint-config) [![Greenkeeper badge](https://badges.greenkeeper.io/idearium/eslint-config-idearium.svg)](https://greenkeeper.io/)
+[![npm](https://img.shields.io/npm/v/@idearium/eslint-config.svg)](https://www.npmjs.com/package/@idearium/eslint-config)
 
 ## Installation
 
