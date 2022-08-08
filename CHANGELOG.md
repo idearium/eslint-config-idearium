@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v4.0.0 - 13 September 2021
+
 ## Changed
 
 -   Migrated to ESlint 7.
