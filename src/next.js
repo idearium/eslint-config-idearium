@@ -1,7 +1,7 @@
 'use strict';
 
 const config = {
-    env: { 'shared-node-browser': true },
+    env: { browser: true, node: true },
     extends: [
         '@idearium/eslint-config/src/common',
         'next/core-web-vitals',
