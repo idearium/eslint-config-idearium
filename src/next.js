@@ -1,11 +1,11 @@
 'use strict';
 
 const config = {
-    env: {
-        browser: true,
-        commonjs: true,
-    },
-    extends: ['@idearium/eslint-config/src/common', 'next', 'prettier'],
+    extends: [
+        '@idearium/eslint-config/src/common',
+        'next/core-web-vitals',
+        'prettier',
+    ],
 };
 
 module.exports = config;
