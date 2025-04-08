@@ -9,9 +9,8 @@ export default defineConfig([
         languageOptions: { globals: { ...globals.jest } },
     },
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
-        plugins: { js },
         extends: ['js/recommended'],
+        plugins: { js },
     },
     eslintConfigPrettier,
 ]);
