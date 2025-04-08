@@ -1,11 +1,5 @@
-'use strict';
+import { defineConfig } from 'eslint/config';
 
-const config = {
-    env: {
-        browser: true,
-        commonjs: true,
-    },
-    extends: ['@idearium/eslint-config/src/common', 'next', 'prettier'],
-};
+import common from './common';
 
-module.exports = config;
+export default defineConfig([{ extends: ['next'] }, common]);

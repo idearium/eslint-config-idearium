@@ -1,18 +1,15 @@
-'use strict';
+import { defineConfig } from 'eslint/config';
+import globals from 'globals';
 
-const config = {
-    env: {
-        node: true,
-    },
-    extends: [
-        '@idearium/eslint-config/src/common',
-        'plugin:node/recommended',
-        'prettier',
-    ],
-    parserOptions: {
-        ecmaVersion: 2019,
-        sourceType: 'script',
-    },
-};
+import common from './common';
 
-module.exports = config;
+export default defineConfig([
+    {
+        files: ['**/*.{js,mjs,cjs,ts}'],
+        languageOptions: {
+            globals: { ...globals.node },
+            sourceType: 'commonjs',
+        },
+    },
+    common,
+]);

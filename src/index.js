@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = require('./node');
+export * from './node';
