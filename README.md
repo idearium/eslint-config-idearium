@@ -12,12 +12,15 @@ This package is available on [NPM](https://www.npmjs.com/package/@eslint/eslint-
   ```javascript
   // @ eslint.config.js
   import { defineConfig } from 'eslint/config';
+
   // For node.js code.
-  export default defineConfig([{ extends: ['@idearium/eslint-config'] }]);
+  import ideariumConfig from '@idearium/eslint-config';
 
   // For next.js code.
-  export default defineConfig([{ extends: ['@idearium/eslint-config/src/next'] }]);
+  import ideariumConfig from '@idearium/eslint-config/src/next';
 
   // For browser code (ES5).
-  export default defineConfig([{ extends: ['@idearium/eslint-config/src/browser'] }]);
+  import ideariumConfig from '@idearium/eslint-config/src/browser';
+
+  export default defineConfig([{ extends: [ideariumConfig] }]);
   ```
