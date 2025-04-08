@@ -1,7 +1,6 @@
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import js from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
 
 export default defineConfig([
     {
@@ -10,7 +9,7 @@ export default defineConfig([
     },
     {
         extends: ['js/recommended'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
         plugins: { js },
     },
-    eslintConfigPrettier,
 ]);

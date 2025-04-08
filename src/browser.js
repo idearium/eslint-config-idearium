@@ -1,19 +1,18 @@
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
-
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import common from '@idearium/eslint-config/src/common.js';
 
 export default defineConfig([
-    { files: ['**/*.js'] },
+    common,
     {
         languageOptions: {
             globals: {
                 ...globals.browser,
-                ...globals.commonjs,
                 ...globals.jquery,
             },
             sourceType: 'script',
         },
     },
-    common,
+    eslintConfigPrettier,
 ]);
