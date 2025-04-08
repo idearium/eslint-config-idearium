@@ -1,8 +1,8 @@
 import { defineConfig } from 'eslint/config';
-import next from 'eslint-config-next';
 import common from '@idearium/eslint-config/src/common.js';
+import { FlatCompat } from '@eslint/eslintrc';
 
-export default defineConfig([
-    { extends: [next] },
-    common,
-]);
+const compat = new FlatCompat({ baseDirectory: import.meta.dirname });
+const nextConfig = [...compat.plugins('eslint-plugin-next')];
+
+export default defineConfig([nextConfig, common]);
