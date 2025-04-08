@@ -1,7 +1,7 @@
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 
-import common from './common';
+import common from '@idearium/eslint-config/src/common.js';
 
 export default defineConfig([
     {
