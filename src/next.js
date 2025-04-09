@@ -8,7 +8,7 @@ const compat = new FlatCompat({ baseDirectory: import.meta.dirname });
 export default defineConfig([
     common,
     {
-        files: ['**/*.{jsx,tsx}'],
+        files: ['**/*.{js,jsx,ts,tsx}'],
         extends: [...compat.config({ extends: ['next/core-web-vitals'] })],
         languageOptions: {
             sourceType: 'module',
