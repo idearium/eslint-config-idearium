@@ -10,14 +10,17 @@ This package is available on [NPM](https://www.npmjs.com/package/@eslint/eslint-
   $ npm install @idearium/eslint-config
   ```
   ```javascript
-  // @ .eslintrc
-  // For node.js code (ES6).
-  {
-    "extends": "@idearium/eslint-config"
-  }
+  // @ eslint.config.js
+  import { defineConfig } from 'eslint/config';
+
+  // For node.js code.
+  import ideariumConfig from '@idearium/eslint-config';
+
+  // For next.js code.
+  import ideariumConfig from '@idearium/eslint-config/src/next';
 
   // For browser code (ES5).
-  {
-    "extends": "@idearium/eslint-config/src/browser"
-  }
+  import ideariumConfig from '@idearium/eslint-config/src/browser';
+
+  export default defineConfig([{ extends: [ideariumConfig] }]);
   ```

@@ -1,16 +1,18 @@
-'use strict';
+import { defineConfig } from 'eslint/config';
+import globals from 'globals';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import common from '@idearium/eslint-config/src/common.js';
 
-const config = {
-    env: {
-        browser: true,
-        commonjs: true,
-        jquery: true,
+export default defineConfig([
+    common,
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.jquery,
+            },
+            sourceType: 'script',
+        },
     },
-    extends: ['@idearium/eslint-config/src/common', 'prettier'],
-    parserOptions: {
-        ecmaVersion: 2019,
-        sourceType: 'script',
-    },
-};
-
-module.exports = config;
+    eslintConfigPrettier,
+]);

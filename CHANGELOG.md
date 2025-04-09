@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v5.0.0 - 2025-04-09
+
+### Changed
+
+-   Upgraded packages.
+
 ## v4.0.0 - 13 September 2021
 
 ## Changed
