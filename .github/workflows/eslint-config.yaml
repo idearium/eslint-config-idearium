@@ -12,15 +12,10 @@ jobs:
     ci:
         name: CI
         uses: ./.github/workflows/ci.yaml
-        secrets: inherit
-
-    environment:
-        name: Setup environment
-        uses: idearium/actions/.github/workflows/environment.yaml@v4
 
     publish:
         name: Publish
-        needs: [ci, environment]
+        needs: ci
         runs-on: ubuntu-latest
         timeout-minutes: 15
         permissions:
@@ -40,11 +35,11 @@ jobs:
             - run: npm ci
 
             - name: Publish (beta)
-              if: needs.environment.outputs.CI_ENV == 'beta'
+              if: contains(github.ref_name, 'beta')
               run: npm publish --tag beta --access public
               working-directory: packages/eslint-config
 
             - name: Publish (production)
-              if: needs.environment.outputs.CI_ENV == 'production'
+              if: ${{ !contains(github.ref_name, 'beta') }}
               run: npm publish --access public
               working-directory: packages/eslint-config
