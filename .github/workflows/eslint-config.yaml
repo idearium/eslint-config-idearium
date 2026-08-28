@@ -1,0 +1,45 @@
+name: Publish @idearium/eslint-config
+
+on:
+    push:
+        tags:
+            - 'v*'
+
+permissions:
+    contents: read
+
+jobs:
+    ci:
+        name: CI
+        uses: ./.github/workflows/ci.yaml
+
+    publish:
+        name: Publish
+        needs: ci
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        permissions:
+            contents: read
+            id-token: write
+        steps:
+            - uses: actions/checkout@v6
+              with:
+                  persist-credentials: false
+
+            - uses: actions/setup-node@v6
+              with:
+                  node-version: '24'
+                  package-manager-cache: false
+                  registry-url: https://registry.npmjs.org
+
+            - run: npm ci
+
+            - name: Publish (beta)
+              if: contains(github.ref_name, 'beta')
+              run: npm publish --tag beta --access public
+              working-directory: packages/eslint-config
+
+            - name: Publish (production)
+              if: ${{ !contains(github.ref_name, 'beta') }}
+              run: npm publish --access public
+              working-directory: packages/eslint-config

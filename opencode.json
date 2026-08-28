@@ -1,0 +1,24 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "permission": {
+        "external_directory": {
+            "~/Developer/eslint-config-idearium/**": "allow"
+        },
+        "read": {
+            "~/Developer/eslint-config-idearium/**": "allow",
+            "~/Developer/linz/**": "allow"
+        },
+        "glob": {
+            "~/Developer/eslint-config-idearium/**": "allow",
+            "~/Developer/linz/**": "allow"
+        },
+        "grep": {
+            "~/Developer/eslint-config-idearium/**": "allow",
+            "~/Developer/linz/**": "allow"
+        },
+        "list": {
+            "~/Developer/eslint-config-idearium/**": "allow",
+            "~/Developer/linz/**": "allow"
+        }
+    }
+}
