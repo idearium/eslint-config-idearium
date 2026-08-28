@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v6.0.1-beta.1 - 2026-08-28
+
 ### Changed
 
 - Upgraded packages.
