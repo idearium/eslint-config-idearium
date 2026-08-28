@@ -5,6 +5,8 @@
 ### Changed
 
 - Upgraded packages.
+- Restructured the repository into an npm workspaces monorepo; package code now lives in packages/eslint-config.
+- Added GitHub Actions workflows and OpenCode deploy tooling; removed Dependabot.
 
 ## v5.0.0 - 2025-04-09
 

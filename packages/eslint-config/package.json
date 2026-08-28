@@ -1,0 +1,44 @@
+{
+  "name": "@idearium/eslint-config",
+  "version": "6.0.0",
+  "description": "Idearium ESLint config.",
+  "keywords": [
+    "eslint",
+    "config",
+    "idearium"
+  ],
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "type": "module",
+  "repository": "https://github.com/idearium/eslint-config-idearium.git",
+  "author": "Allan Chau",
+  "license": "MIT",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.9.1",
+    "eslint-config-next": "16.3.3",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.11.0",
+    "prettier": "3.9.6"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "next": "16.3.3",
+    "typescript": "7.0.2"
+  }
+}

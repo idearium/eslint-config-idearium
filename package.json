@@ -1,40 +1,20 @@
 {
-    "name": "@idearium/eslint-config",
-    "version": "6.0.0",
-    "description": "Idearium ESLint config.",
-    "keywords": [
-        "eslint",
-        "config",
-        "idearium"
-    ],
-    "files": [
-        "src"
-    ],
-    "main": "src/index.js",
-    "type": "module",
-    "repository": "https://github.com/idearium/eslint-config-idearium.git",
-    "author": "Allan Chau",
-    "license": "MIT",
-    "engines": {
-        "node": "^20.19.0 || ^22.13.0 || >=24"
-    },
-    "dependencies": {
-        "@eslint/js": "9.39.4",
-        "eslint": "9.39.4",
-        "eslint-config-next": "16.2.10",
-        "eslint-config-prettier": "10.1.8",
-        "globals": "17.7.0",
-        "prettier": "3.9.4"
-    },
-    "peerDependencies": {
-        "typescript": ">=5.0.0"
-    },
-    "peerDependenciesMeta": {
-        "typescript": {
-            "optional": true
-        }
-    },
-    "devDependencies": {
-        "typescript": "5.9.3"
-    }
+  "name": "eslint-config-idearium",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint .",
+    "test": "npm test -w packages/eslint-config"
+  },
+  "devDependencies": {
+    "@idearium/eslint-config": "*",
+    "eslint": "10.9.1",
+    "husky": "9.1.7",
+    "lint-staged": "17.4.1",
+    "prettier": "3.9.6",
+    "vitest": "4.1.11"
+  }
 }
